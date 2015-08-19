@@ -1,5 +1,9 @@
 # LGPL3+ - (C) 2015 by Jan Helbling <jan.helbling@gmail.com>
 
+DESTDIR	=	/usr/local
+LIB	=	$(DESTDIR)/lib/
+INCLUDE	=	$(DESTDIR)/include/
+
 default: regexp library
 
 regexp:	regexp.c regexp.h
@@ -17,3 +21,11 @@ test: example
 
 clean:
 	rm -f *.o example libregexp.a
+
+install:	default
+	install -m 755 libregexp.a $(LIB)
+	install -m 644 regexp.h $(INCLUDE)
+
+uninstall:
+	rm $(LIB)libregexp.a
+	rm $(INCLUDE)regexp.h

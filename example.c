@@ -4,7 +4,7 @@
 int main(int argc,char *argv[]){
 	int a,b,cn;
 	
-	char test[] = "Jan Nicolas Jonas Helbling Nolaci";
+	char test[] = "Jan Nicolas Jonas Helbling Nolaci Nilillic";
 	char pattern[] = "N[icolas]+";
 	
 	char **buffer = (char **)malloc(4096);
