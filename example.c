@@ -2,7 +2,7 @@
 #include "regexp.h"
 
 int main(int argc,char *argv[]){
-	int a,b,cn;
+	int cn;
 	
 	char test[] = "Jan Nicolas Jonas Helbling Nolaci Nilillic";
 	char pattern[] = "N[icolas]+";
