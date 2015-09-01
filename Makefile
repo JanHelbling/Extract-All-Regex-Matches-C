@@ -10,7 +10,7 @@ regexp:	regexp.c regexp.h
 	gcc -c regexp.c
 
 library:
-	ar -rvs libregexp.a regexp.o
+	ar -rcs libregexp.a regexp.o
 
 example: example.c regexp.c regexp.h
 	gcc -c example.c regexp.c
