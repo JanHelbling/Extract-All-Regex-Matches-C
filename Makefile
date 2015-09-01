@@ -4,16 +4,16 @@ DESTDIR	=	/usr/local
 LIB	=	$(DESTDIR)/lib/
 INCLUDE	=	$(DESTDIR)/include/
 
-default: regexp library
+default: regexp.o libregexp.a
 
-regexp:	regexp.c regexp.h
+regexp.o:	regexp.c regexp.h
 	gcc -c regexp.c
 
-library:
+libregexp.a:	regexp.o
 	ar -rcs libregexp.a regexp.o
 
-example: example.c regexp.c regexp.h
-	gcc -c example.c regexp.c
+example: example.c regexp.c regexp.h regexp.o
+	gcc -c example.c
 	gcc example.o regexp.o -o example
 
 test: example
