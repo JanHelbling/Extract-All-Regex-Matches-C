@@ -15,6 +15,6 @@ int main(int argc,char *argv[]){
 	for(i=0;i!=cn;i++){
 		puts(buffer[i]);
 	}
-	
+	free(buffer);
 	return 0;
 }
