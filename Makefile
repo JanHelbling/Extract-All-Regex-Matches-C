@@ -1,4 +1,4 @@
-# LGPL3+ - (C) 2015 by Jan Helbling <jan.helbling@gmail.com>
+# LGPL3+ - (C) 2015 by Jan Helbling <jan.helbling@mailbox.org>
 
 DESTDIR	=	/usr/local
 LIB	=	$(DESTDIR)/lib/
