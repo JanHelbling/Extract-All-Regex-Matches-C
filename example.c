@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "regexp.h"
+#include "myregexp.h"
 
 int main(int argc,char *argv[]){
 	int cn;
