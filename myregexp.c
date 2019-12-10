@@ -19,6 +19,7 @@
 
 #include <regex.h>
 #include <stdlib.h>
+#include <string.h>
  
 char *regexp (const char *string,const char *patrn, int *begin, int *end) {
 	int len;
